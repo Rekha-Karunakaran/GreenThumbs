@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> home page  </title>
+
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Times New Roman';
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    color: #111111;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-links
+{
+    text-align: right;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg3.jpeg);
+    background-size: cover;
+    background-position:center;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%);
+    text-align: center;
+    color: black;
+}
+.content h1{
+    font-size: 30px;
+    padding-left: 50%;
+}
+.content h4{
+    font-size:17px;
+    padding-left: 50%;
+    color: rgb(3, 59, 73);
+}
+.button{
+    display: inline-block;
+    margin: 0px;
+    padding:10px 24px;
+    text-align: center;
+    cursor: pointer;
+    padding-left: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    background: transparent;
+}
+
+</style>
+</head>
+<body>
+    <div class="banner"> 
+        <nav>
+            <div class="nav-links">
+              <a href="home.html">HOME</a>&nbsp;&nbsp;
+              <a href="About.html">ABOUT</a>&nbsp;&nbsp;
+              <a href="guide.html">GUIDE</a>&nbsp;&nbsp;
+              <a href="forum.html">DISCUSSION FORUM</a>&nbsp;&nbsp;
+              <a href="connect.html">CONNECT</a>&nbsp;&nbsp;
+              <a href="socio-ref.html">SOCIO REF</a>&nbsp;&nbsp;
+              <a href="#">LOGOUT</a>
+            </div>
+        </nav>
+    </div>  
+    <div class="content">
+        <h1>WELCOME TO OUR HOUSEPLANTS CARE GUIDE</h1></br>
+        <h4>Knowing how much you guys love plants too.</br>We decided to put together a plant guide, something for you..</h4></br></br>
+        <div class="button"><table><tr><form action="login.html" data-inline="true"><button>Login</button></form> &nbsp;&nbsp;
+            <form action="register.html" data-inline="true"><button>Register</button></form></tr></table>
+          
+        </div>
+    </div>
+</body>
+</html>

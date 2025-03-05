@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Guide page </title>
+</head>
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    color: #111111;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo
+{
+    text-decoration:none;
+    color: #ffd04e;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 2%;
+}
+.nav-links
+{
+    text-align: right;
+    background: #210a86;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ea;
+}
+.nav-links ul li a:hover
+{
+    color: #4eb88f;
+}
+.left-sidebar
+{
+    width: 28%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #0f0379;
+    border-bottom: 35%;
+    border-top: 35%;
+}
+.row
+{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+.left-col
+{
+    flex-basis: 150%;
+}
+.right-col
+{
+    flex-basis: 100%;
+}
+.left-col img
+{
+    width: 80%;
+}
+.right-col h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.right-col p{
+    color: #025f38;
+    margin: 20px 0 70px;
+}
+.right-col button{
+  background-color: #070480;
+  color: #f1f0f5;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;  
+}
+.right-col button:hover{
+  color: #ffd04e;
+}
+</style>
+<body>
+  <div class="header">
+    <nav>
+      <a href="#" class="logo"> HOUSEPLANTS CARE GUIDE</a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="guide.html">HOME</a></li>
+          <li><a href="care guide.html">CARE GUIDE</a></li>
+          <li><a href="shop.html">ADD PLANTS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="left-sidebar"></div>
+      <div class="row">
+        <div class="left-col"><img src="images/bg4.jpg"></div>
+        <div class="right-col">
+          <h1>Hello..! all buddies..<br/>
+              I'm your CARE GUIDE</h1>
+          <p>Fresh beginning always exists.. We only have to <strong>WELCOME</strong> them.<br/><br/>
+             Here we <strong>WELCOME</strong> you all for <b>a new beginning</b> to make a peaceful and healthy environment by 
+             providing some care guide tips to your <strong>HOUSEPLANTS.</strong></p>
+          <form action="care guide.html"><button>Explore Now</button></form>
+          </div>
+      </div>
+    </div>                  
+</body>
+</html>

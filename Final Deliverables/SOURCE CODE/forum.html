@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Decision Forum</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ body{
+    margin: 20;
+    padding: 5px;
+    font-family: 'Times New Roman';
+    align-items: center;
+    justify-content: center;
+ }
+ /* Header */
+header{
+    background-color: #080811;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+}
+header .navbar-brand{
+    font-size: 28px;
+    color: #fff;
+}
+    </style>
+    <script>
+        // Add JavaScript code for interaction and decision-makingr
+        function submitForm() {
+            // Get user's responses from the form
+            var response1 = document.getElementById("response1").value;
+            var response2 = document.getElementById("response2").value;
+            var response3 = document.getElementById("response3").value;
+
+            // Perform decision-making logic based on responses
+            // You can customize this part based on your requirements
+            var recommendation1 = "";
+            if (response1 === "yes") {
+                recommendation1 = "Great! Keep up the good work.";
+            } else if (response1 === "no") {
+                recommendation1 = "You should take action to address the issue.";
+            } else {
+                recommendation1 = "Try to gather more information or consult an expert.";
+            }
+
+            var recommendation2 = "";
+            if (response2 === "yes") {
+                recommendation2 = "Great! Keep up the good work.";
+            } else if (response2 === "no") {
+                recommendation2 = "You should take action to address the issue.";
+            } else {
+                recommendation2 = "Try to gather more information or consult an expert.";
+            }
+
+            var recommendation3 = "";
+            if (response3 === "yes") {
+                recommendation3 = "Great! Keep up the good work.";
+            } else if (response3 === "no") {
+                recommendation3 = "You should take action to address the issue.";
+            } else {
+                recommendation3 = "Try to gather more information or consult an expert.";
+            }
+
+            // Display the recommendations on the page
+            document.getElementById("recommendation1").innerHTML = recommendation1;
+            document.getElementById("recommendation2").innerHTML = recommendation2;
+            document.getElementById("recommendation3").innerHTML = recommendation3;
+        }
+    </script>
+</head>
+<body>
+    <div class="fixed top">
+        <header>
+            <a class="navbar-brand" href="#">DISCUSSION FORUM</a>
+        </header>
+    </div>
+    <form onsubmit="event.preventDefault(); submitForm();">
+        <h3>Question 1:</h3>
+        <label>Is the plant getting enough sunlight?</label>
+        <select id="response1">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="unsure">I'm not sure</option>
+        </select>
+
+        <h3>Question 2:</h3>
+        <label>Does the plant need watering?</label>
+        <select id="response2">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="unsure">I'm not sure</option>
+        </select>
+
+        <h3>Question 3:</h3>
+        <label>Are there any signs of pests or disease?</label>
+        <select id="response3">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="unsure">I'm not sure</option>
+        </select>
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    
